@@ -12,6 +12,7 @@ Cada skill es un experto en un tema de producto, listo para sumar a tu Sistema O
 | [`market-research`](market-research/SKILL.md) | Analista de mercado: investiga competidores, tamaño de oportunidad y segmentos en la web (research secundario). Token-aware. |
 | [`ux-research`](ux-research/SKILL.md) | UX Researcher: define objetivo, segmento, método (entrevista/encuesta/shadowing…) y el guión de preguntas con **Jobs To Be Done** para investigar con usuarios reales. |
 | [`usuarios-sinteticos`](usuarios-sinteticos/SKILL.md) | Genera usuarios sintéticos de tu segmento y pre-testea tu guión (entrevista/panel/pre-mortem) para afilar las preguntas antes de salir a campo. No valida nada, solo mejora tu guión. |
+| [`motor-de-insight`](motor-de-insight/SKILL.md) | Motor de convergencia: procesa las respuestas de tu research (+ contexto de negocio) y extrae insights con evidencia, **JTBD funcionales/emocionales/sociales**, el Perfil del Cliente del **Value Proposition Canvas** y oportunidades priorizadas contra el outcome (las ramas del **Opportunity Solution Tree**). |
 | [`product-metric-coach`](product-metric-coach/SKILL.md) | Te guía para definir la North Star Metric de un producto y construir su Key Metric Tree (Reach, Activation, Engagement, Retention, Business-specific). |
 | [`cpo-prd-coach`](cpo-prd-coach/SKILL.md) | CPO que te entrevista para co-crear el PRD de tu producto sección por sección (problema, usuario, solución, MVP con landing y captura de leads, métricas). Delega la arquitectura técnica en tu skill de CTO. |
 
@@ -30,6 +31,12 @@ Estos skills están diseñados para **trabajar en conjunto**: cada uno termina s
      └──► ux-research ───── ¿el problema es real para la gente? método + guión JTBD  (research primario · usuarios)
               │
               └──► usuarios-sinteticos ─ pre-testeá el guión antes de campo (afila las preguntas, NO valida)
+                       │
+                       ▼ (salís a campo: entrevistas / encuestas con usuarios reales)
+                       │
+              motor-de-insight ── convergencia: respuestas + datos de negocio → insights con evidencia
+                                  → JTBD (funcional/emocional/social) → Perfil del Cliente (VPC)
+                                  → oportunidades priorizadas (ramas del Opportunity Solution Tree)
 ```
 
 > El handoff entre skills es lo que convierte tu sistema en un **squad**: no es una herramienta suelta, es un equipo de especialistas que se pasan la posta.
