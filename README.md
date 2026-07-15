@@ -13,6 +13,7 @@ Cada skill es un experto en un tema de producto, listo para sumar a tu Sistema O
 | [`ux-research`](ux-research/SKILL.md) | UX Researcher: define objetivo, segmento, método (entrevista/encuesta/shadowing…) y el guión de preguntas con **Jobs To Be Done** para investigar con usuarios reales. |
 | [`usuarios-sinteticos`](usuarios-sinteticos/SKILL.md) | Genera usuarios sintéticos de tu segmento y pre-testea tu guión (entrevista/panel/pre-mortem) para afilar las preguntas antes de salir a campo. No valida nada, solo mejora tu guión. |
 | [`motor-de-insight`](motor-de-insight/SKILL.md) | Motor de convergencia: procesa las respuestas de tu research (+ contexto de negocio) y extrae insights con evidencia, **JTBD funcionales/emocionales/sociales**, el Perfil del Cliente del **Value Proposition Canvas** y oportunidades priorizadas contra el outcome (las ramas del **Opportunity Solution Tree**). |
+| [`motor-de-ideacion`](motor-de-ideacion/SKILL.md) | Motor de ideación en dos tiempos. **Diverge**: prepara tu workshop con stakeholders (How Might We trazables, ideas semilla de la IA en zona sellada, agenda y tablero en FigJam/Slides/HTML). **Converge**: lee los resultados y sintetiza el **Mapa del Valor** + el brief de prototipo. Incluye el subagente [`ui-designer`](motor-de-ideacion/agente-ui-designer.md). |
 | [`product-metric-coach`](product-metric-coach/SKILL.md) | Te guía para definir la North Star Metric de un producto y construir su Key Metric Tree (Reach, Activation, Engagement, Retention, Business-specific). |
 | [`cpo-prd-coach`](cpo-prd-coach/SKILL.md) | CPO que te entrevista para co-crear el PRD de tu producto sección por sección (problema, usuario, solución, MVP con landing y captura de leads, métricas). Delega la arquitectura técnica en tu skill de CTO. |
 
@@ -37,6 +38,9 @@ Estos skills están diseñados para **trabajar en conjunto**: cada uno termina s
               motor-de-insight ── convergencia: respuestas + datos de negocio → insights con evidencia
                                   → JTBD (funcional/emocional/social) → Perfil del Cliente (VPC)
                                   → oportunidades priorizadas (ramas del Opportunity Solution Tree)
+                       │
+                       ▼
+              motor-de-ideacion ─ workshop de ideación con stakeholders ──► Mapa del Valor + brief de prototipo
 ```
 
 > El handoff entre skills es lo que convierte tu sistema en un **squad**: no es una herramienta suelta, es un equipo de especialistas que se pasan la posta.
