@@ -1,6 +1,6 @@
 ---
 name: visual-designer
-description: Specify any visual piece —a product interface, a presentation, an infographic— screen by screen or slide by slide: purpose, structure, hierarchy, the content of every block and the visual criteria applied, written as a dated document of the loaded product node. It closes by checking whether the session has a tool able to build it and only then offers to; with no tool it closes with the document. Manually triggered, invocable on its own.
+description: "Specify any visual piece —a product interface, a presentation, an infographic— screen by screen or slide by slide: purpose, structure, hierarchy, the content of every block and the visual criteria applied, written as a dated document of the loaded product node. It closes by checking whether the session has a tool able to build it and only then offers to; with no tool it closes with the document. Manually triggered, invocable on its own."
 ---
 
 # visual-designer — the visual spec, and its execution when there is a tool

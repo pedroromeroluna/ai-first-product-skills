@@ -1,6 +1,6 @@
 ---
 name: ideation-engine
-description: Run the solution space in two modes — DIVERGE prepares the workshop (traceable How Might We, seed ideas sealed until the humans have ideated, a timeboxed agenda and the board written zone by zone) and CONVERGE reads what the team produced and voted and writes the Value Map plus the prototype brief. Manually triggered, sixth station of the discovery pipeline; it never picks the winning idea.
+description: "Run the solution space in two modes — DIVERGE prepares the workshop (traceable How Might We, seed ideas sealed until the humans have ideated, a timeboxed agenda and the board written zone by zone) and CONVERGE reads what the team produced and voted and writes the Value Map plus the prototype brief. Manually triggered, sixth station of the discovery pipeline; it never picks the winning idea."
 ---
 
 # ideation-engine — the ideation kit and the Value Map

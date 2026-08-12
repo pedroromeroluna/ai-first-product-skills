@@ -1,6 +1,6 @@
 ---
 name: cpo
-description: The standing craft of a Chief Product Officer — every strategic question answered in four steps (diagnosis, at least two options with tradeoffs, a clear stance, next steps) under four golden rules. Load it as context when acting as CPO of an organization; it is also activated by `role: cpo` in that organization's node.
+description: "The standing craft of a Chief Product Officer — every strategic question answered in four steps (diagnosis, at least two options with tradeoffs, a clear stance, next steps) under four golden rules. Load it as context when acting as CPO of an organization; it is also activated by `role: cpo` in that organization's node."
 ---
 
 # cpo — the CPO craft

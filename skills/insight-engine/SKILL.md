@@ -1,6 +1,6 @@
 ---
 name: insight-engine
-description: Converge the raw answers of real fieldwork —clusters with their noise and their outliers, jobs to be done in three dimensions with two verbatims each, the customer profile, opportunities scored against the business outcome— and write the Insight Brief as dated research of the loaded product node. Manually triggered, fifth station of the discovery pipeline: the first one that runs after real fieldwork.
+description: "Converge the raw answers of real fieldwork —clusters with their noise and their outliers, jobs to be done in three dimensions with two verbatims each, the customer profile, opportunities scored against the business outcome— and write the Insight Brief as dated research of the loaded product node. Manually triggered, fifth station of the discovery pipeline: the first one that runs after real fieldwork."
 ---
 
 # insight-engine — the Insight Brief
