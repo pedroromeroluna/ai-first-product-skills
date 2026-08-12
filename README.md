@@ -1,65 +1,75 @@
-# AI First PM — Skills
+# Product Builder skills
 
-Colección de **skills** (agentes especialistas) del curso **AI First PM** de [Product HUB](https://www.producthub.com.ar/).
+12 skills for building product with an agent: discovery from a vague problem to the strategic
+layer of a product —including what happens after real fieldwork: converging the evidence and
+ideating the solution—, the measurement layer, the pressure interview that keeps every claim honest,
+and the standing crafts of a CPO and a CTO.
 
-Cada skill es un experto en un tema de producto, listo para sumar a tu Sistema Operativo de PM.
+Each one runs on its own, in any project, with nothing else installed: a small skill, a small blast
+radius, a real deliverable. Installed this way the deliverable is a file in the current folder.
 
-## Skills disponibles
+## Install
 
-| Skill | Qué hace |
-|---|---|
-| [`product-strategy`](product-strategy/SKILL.md) | CPO de bolsillo: te entrevista para framear el problema real, la métrica a mover y las hipótesis a investigar, antes de saltar a la solución. |
-| [`market-research`](market-research/SKILL.md) | Analista de mercado: investiga competidores, tamaño de oportunidad y segmentos en la web (research secundario). Token-aware. |
-| [`ux-research`](ux-research/SKILL.md) | UX Researcher: define objetivo, segmento, método (entrevista/encuesta/shadowing…) y el guión de preguntas con **Jobs To Be Done** para investigar con usuarios reales. |
-| [`usuarios-sinteticos`](usuarios-sinteticos/SKILL.md) | Genera usuarios sintéticos de tu segmento y pre-testea tu guión (entrevista/panel/pre-mortem) para afilar las preguntas antes de salir a campo. No valida nada, solo mejora tu guión. |
-| [`motor-de-insight`](motor-de-insight/SKILL.md) | Motor de convergencia: procesa las respuestas de tu research (+ contexto de negocio) y extrae insights con evidencia, **JTBD funcionales/emocionales/sociales**, el Perfil del Cliente del **Value Proposition Canvas** y oportunidades priorizadas contra el outcome (las ramas del **Opportunity Solution Tree**). |
-| [`motor-de-ideacion`](motor-de-ideacion/SKILL.md) | Motor de ideación en dos tiempos. **Diverge**: prepara tu workshop con stakeholders (How Might We trazables, ideas semilla de la IA en zona sellada, agenda y tablero en FigJam/Slides/HTML). **Converge**: lee los resultados y sintetiza el **Mapa del Valor** + el brief de prototipo. Trabaja en dupla con el subagente [`ui-designer`](ui-designer/README.md). |
-| [`ui-designer`](ui-designer/README.md) | **Subagente ejecutor** (no es un skill): el dueño del Figma MCP de tu sistema. Construye tableros FigJam hoy — design systems y screens en próximas clases. Los skills piensan el QUÉ; él ejecuta el CÓMO. |
-| [`product-metric-coach`](product-metric-coach/SKILL.md) | Te guía para definir la North Star Metric de un producto y construir su Key Metric Tree (Reach, Activation, Engagement, Retention, Business-specific). |
-| [`cpo-prd-coach`](cpo-prd-coach/SKILL.md) | CPO que te entrevista para co-crear el PRD de tu producto sección por sección (problema, usuario, solución, MVP con landing y captura de leads, métricas). Delega la arquitectura técnica en tu skill de CTO. |
-
-## La cadena de Discovery
-
-Estos skills están diseñados para **trabajar en conjunto**: cada uno termina su trabajo sugiriendo el siguiente. Así pasás de una idea difusa a un plan de investigación accionable.
+The whole pack:
 
 ```
- idea difusa
-     │
-     ▼
- product-strategy ──► problema · métrica · hipótesis
-     │
-     ├──► market-research ─ ¿la oportunidad es grande? competidores + tamaño   (research secundario · web)
-     │
-     └──► ux-research ───── ¿el problema es real para la gente? método + guión JTBD  (research primario · usuarios)
-              │
-              └──► usuarios-sinteticos ─ pre-testeá el guión antes de campo (afila las preguntas, NO valida)
-                       │
-                       ▼ (salís a campo: entrevistas / encuestas con usuarios reales)
-                       │
-              motor-de-insight ── convergencia: respuestas + datos de negocio → insights con evidencia
-                                  → JTBD (funcional/emocional/social) → Perfil del Cliente (VPC)
-                                  → oportunidades priorizadas (ramas del Opportunity Solution Tree)
-                       │
-                       ▼
-              motor-de-ideacion ─ workshop de ideación con stakeholders ──► Mapa del Valor + brief de prototipo
+npx skills add pedroromeroluna/ai-first-product-skills
 ```
 
-> El handoff entre skills es lo que convierte tu sistema en un **squad**: no es una herramienta suelta, es un equipo de especialistas que se pasan la posta.
+One skill at a time:
 
-## Cómo usar un skill (2 modos)
+```
+npx skills add pedroromeroluna/ai-first-product-skills --skill product-strategy
+```
 
-### Modo 1 — Sumalo a tu Second Brain (Claude Code)
-1. Descargá el archivo `SKILL.md` del skill que quieras.
-2. Ponelo en tu proyecto, dentro de `.claude/skills/<nombre-del-skill>/SKILL.md`.
-3. Invocalo escribiendo `/<nombre-del-skill>` (ej. `/product-metric-coach`).
+Either way the skills land in `.claude/skills/` of the current project, where any harness that reads
+the Agent Skills standard picks them up. Nothing here activates on its own: a skill runs when you
+name it.
 
-### Modo 2 — Copy-paste (sin instalar nada)
-1. Abrí el `SKILL.md` y tocá el botón **Raw** (o **Copy raw file**).
-2. Copiá **todo** el contenido (incluido el encabezado entre `---`).
-3. Pegalo como **primer mensaje** en Claude o ChatGPT y empezá a trabajar.
+## The suggested sequence
 
-Los dos modos dan el mismo resultado. Elegí el que te quede más cómodo.
+Discovery is a chain. Nothing enforces the order —every skill works alone and out of order— but each
+station leaves written down what the next one expects to read:
 
----
+1. **`product-strategy`** — Run the socratic discovery interview that separates the symptom from the cause, grades the evidence, applies the metric gate and prioritizes up to three hypotheses, and write the Discovery Brief as dated research of the loaded product node. Manually triggered, first station of the discovery pipeline.
+2. **`market-research`** — Size the opportunity with secondary research only — directional TAM/SAM/SOM where every number carries its cited source and the assumption that turns it into a number for this product — and write the Market Brief as dated research of the loaded product node. Manually triggered, second station of the discovery pipeline.
+3. **`ux-research`** — Design one research round against the single riskiest hypothesis — behavioral screening, one modality chosen on purpose, a guide whose every question is tied to a hypothesis or a job dimension — and write the Research Plan as dated research of the loaded product node. Manually triggered, third station of the discovery pipeline.
+4. **`synthetic-users`** — Pilot the v1 research guide against synthetic personas —every trait marked as evidence or assumption, at least one skeptic— to find broken questions before spending real fieldwork, and write the Diagnosis + Script v2. Manually triggered, fourth station of the discovery pipeline; it validates nothing.
+5. **Real fieldwork** — real interviews with real people, outside this pack and outside any agent.
+   The synthetic pilot finds broken questions; it validates nothing.
+6. **`insight-engine`** — Converge the raw answers of real fieldwork —clusters with their noise and their outliers, jobs to be done in three dimensions with two verbatims each, the customer profile, opportunities scored against the business outcome— and write the Insight Brief as dated research of the loaded product node. Manually triggered, fifth station of the discovery pipeline: the first one that runs after real fieldwork.
+7. **`ideation-engine`** — Run the solution space in two modes — DIVERGE prepares the workshop (traceable How Might We, seed ideas sealed until the humans have ideated, a timeboxed agenda and the board written zone by zone) and CONVERGE reads what the team produced and voted and writes the Value Map plus the prototype brief. Manually triggered, sixth station of the discovery pipeline; it never picks the winning idea.
+8. **`prd`** — Interview the operator and write the strategic layer of a product —vision, problem, users, scope, competitors, opportunities, open questions, glossary— into the `context/` of its node in the brain, never into the body repo. Manually triggered, last link of the discovery pipeline and the gate before specs.
 
-*Material educativo del curso AI First PM · Product HUB.*
+Three more that hang off the chain rather than sitting in it:
+
+- **`visual-designer`** — Specify any visual piece —a product interface, a presentation, an infographic— screen by screen or slide by slide: purpose, structure, hierarchy, the content of every block and the visual criteria applied, written as a dated document of the loaded product node. It closes by checking whether the session has a tool able to build it and only then offers to; with no tool it closes with the document. Manually triggered, invocable on its own.
+- **`product-metrics`** — Build the measurement layer of a product — one candidate North Star, the tree of levers that hold it up with where each is measured, one metric per active hypothesis with its value today or a gap with an owner, and the antimetrics with their alarm thresholds — and write the Metric Brief. Manually triggered, or entered when the metric gate of product-strategy does not pass.
+- **`grill`** — Pressure the facts behind a claim before a decision closes — counter-question with a concrete example, capped attempts, escape hatches, evidence hierarchy — and route what comes out to the loaded node's decisions or backlog. Manually triggered, and also the method any other interviewing tool cites by path.
+
+Two more that are not stations at all:
+
+- **`cpo`** — The standing craft of a Chief Product Officer — every strategic question answered in four steps (diagnosis, at least two options with tradeoffs, a clear stance, next steps) under four golden rules. Load it as context when acting as CPO of an organization; it is also activated by `role: cpo` in that organization's node.
+- **`cto`** — The standing craft of a Chief Technology Officer — every technical question answered in four steps (diagnosis of what exists and its constraints, at least two options with tradeoffs and long-term cost, a clear stance that always names the alternatives discarded and why, next steps that can be verified) under five golden rules for a non-developer builder. The state of the art — models, prices, capabilities — is verified live before opining, never answered from memory. Load it as context when acting as CTO of an organization; it is also activated by `role: cto` in that organization's node.
+
+## The index
+
+`npx skills add pedroromeroluna/ai-first-product-skills` also installs **`product-builder-resolver`**: one row per capability of the
+pack, so an agent can route a request to the right skill instead of guessing. Load it when you do
+not know which of the 12 the situation calls for.
+
+## The system these come from
+
+These 12 are one pack of **AI First OS**, a product operating system for a person who works with
+agents: every session opens with a scan of your work, whatever comes up gets captured on the fly,
+the session closes with a verdict of what got done and what is missing, and the deliverables of
+these skills land in the node they belong to instead of in a loose file.
+
+`github.com/pedroromeroluna/ai-first-os`
+
+The sample sells the system, never the other way round: if these earn your trust on their own, that
+is where they came from.
+
+## License
+
+MIT. See `LICENSE`.
