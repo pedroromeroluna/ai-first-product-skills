@@ -73,7 +73,6 @@ the ones that are not there — inside AI First OS they are all installed alread
 gets offered:
 
 - `cto` — `npx skills add pedroromeroluna/ai-first-product-skills --skill cto`
-- `grill` — `npx skills add pedroromeroluna/ai-first-product-skills --skill grill`
 - `ideation-engine` — `npx skills add pedroromeroluna/ai-first-product-skills --skill ideation-engine`
 - `insight-engine` — `npx skills add pedroromeroluna/ai-first-product-skills --skill insight-engine`
 - `market-research` — `npx skills add pedroromeroluna/ai-first-product-skills --skill market-research`

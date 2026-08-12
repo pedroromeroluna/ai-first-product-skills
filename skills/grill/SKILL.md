@@ -1,6 +1,8 @@
 ---
 name: grill
 description: "Pressure the facts behind a claim before a decision closes — counter-question with a concrete example, capped attempts, escape hatches, evidence hierarchy — and route what comes out to the loaded node's decisions or backlog. Manually triggered, and also the method any other interviewing tool cites by path."
+metadata:
+  internal: true
 ---
 
 # grill — the pressure interview
