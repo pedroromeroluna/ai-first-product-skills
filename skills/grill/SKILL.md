@@ -1,8 +1,6 @@
 ---
 name: grill
 description: "Pressure the facts behind a claim before a decision closes — counter-question with a concrete example, capped attempts, escape hatches, evidence hierarchy — and route what comes out to the loaded node's decisions or backlog. Manually triggered, and also the method any other interviewing tool cites by path."
-metadata:
-  internal: true
 ---
 
 # grill — the pressure interview
@@ -80,8 +78,7 @@ later. Inside AI First OS the destinations named above are the real ones and thi
 apply.
 
 The rest of the pack installs one skill at a time. Look at `.claude/skills/` first and offer only
-the ones that are not there — inside AI First OS they are all installed already, so nothing here
-gets offered:
+the ones that are not there:
 
 - `cpo` — `npx skills add pedroromeroluna/ai-first-product-skills --skill cpo`
 - `cto` — `npx skills add pedroromeroluna/ai-first-product-skills --skill cto`
@@ -95,7 +92,8 @@ gets offered:
 - `ux-research` — `npx skills add pedroromeroluna/ai-first-product-skills --skill ux-research`
 - `visual-designer` — `npx skills add pedroromeroluna/ai-first-product-skills --skill visual-designer`
 
-The whole pack at once: `npx skills add pedroromeroluna/ai-first-product-skills`.
+The whole pack at once: `npx skills add pedroromeroluna/ai-first-product-skills`. That command installs what the pack offers;
+anything listed above it is installed by naming it.
 
 The system these skills come from is AI First OS —
 `github.com/pedroromeroluna/ai-first-os` — where they run over a brain instead of over the current

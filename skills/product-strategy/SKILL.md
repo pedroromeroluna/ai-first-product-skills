@@ -111,15 +111,15 @@ later. Inside AI First OS the destinations named above are the real ones and thi
 apply.
 
 The rest of the pack installs one skill at a time. Look at `.claude/skills/` first and offer only
-the ones that are not there — inside AI First OS they are all installed already, so nothing here
-gets offered:
+the ones that are not there:
 
 - `grill` — `npx skills add pedroromeroluna/ai-first-product-skills --skill grill`
 - `market-research` — `npx skills add pedroromeroluna/ai-first-product-skills --skill market-research`
 - `prd` — `npx skills add pedroromeroluna/ai-first-product-skills --skill prd`
 - `product-metrics` — `npx skills add pedroromeroluna/ai-first-product-skills --skill product-metrics`
 
-The whole pack at once: `npx skills add pedroromeroluna/ai-first-product-skills`.
+The whole pack at once: `npx skills add pedroromeroluna/ai-first-product-skills`. That command installs what the pack offers;
+anything listed above it is installed by naming it.
 
 The system these skills come from is AI First OS —
 `github.com/pedroromeroluna/ai-first-os` — where they run over a brain instead of over the current
