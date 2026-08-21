@@ -153,7 +153,7 @@ With no product node, the file is written to the current folder anyway, and this
 
 the file is loose, nothing filed it, and no session scan will bring it back later.
 
-The way out is named, never taken: `new-org` gives the work an organization, `mount-repo` gives it
+The way out is named, never taken: `new-org` gives the work an organization, `new-product` gives it
 a product node. This skill never runs either — it may offer to move the file afterwards, but it
 never creates that structure on its own.
 
