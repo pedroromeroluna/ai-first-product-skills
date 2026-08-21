@@ -96,12 +96,25 @@ The Diagnosis + Script v2 does not replace real fieldwork: it is the step that r
 broken script reaches the first interview with a real person. Synthesizing what comes out of real
 fieldwork —transcripts into findings— is not the job of this skill: that is `insight-engine`.
 
-## Standalone use
+## Destination
 
-Without a brain, the deliverable is written to a file in the current folder: the process is the
-same, but nothing is filed into a node, a backlog or a resolver, and no session scan brings it back
-later. Inside AI First OS the destinations named above are the real ones and this section does not
-apply.
+The skill resolves the destination before producing the deliverable, never after. Three cases,
+two destinations:
+
+- A product node is loaded: the deliverable goes to `context/<YYYY-MM-DD>-<name>.md` of that node.
+- There is a brain, but no product node — no organization yet, or an organization without one: the
+  deliverable is written to a file in the current folder.
+- There is no brain at all: the deliverable is written to a file in the current folder.
+
+With no product node, the file is written to the current folder anyway, and this line announces it:
+
+the file is loose, nothing filed it, and no session scan will bring it back later.
+
+The way out is named, never taken: `new-org` gives the work an organization, `mount-repo` gives it
+a product node. This skill never runs either — it may offer to move the file afterwards, but it
+never creates that structure on its own.
+
+This skill never asks which destination to use, and it never invents a third one.
 
 The rest of the pack installs one skill at a time. Look at `.claude/skills/` first and offer only
 the ones that are not there:

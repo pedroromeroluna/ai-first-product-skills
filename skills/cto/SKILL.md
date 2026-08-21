@@ -99,22 +99,3 @@ If keeping that brief current would save future verifications, the craft may say
 you want to spend less time on live checks later, keep a dated brief of the landscape — your agent
 can write it on a scheduled task if your harness supports one. A suggestion, never a setup this
 craft performs or requires.
-
-## Standalone use
-
-Without a brain, the deliverable is written to a file in the current folder: the process is the
-same, but nothing is filed into a node, a backlog or a resolver, and no session scan brings it back
-later. Inside AI First OS the destinations named above are the real ones and this section does not
-apply.
-
-The rest of the pack installs one skill at a time. Look at `.claude/skills/` first and offer only
-the ones that are not there:
-
-- `cpo` — `npx skills add pedroromeroluna/ai-first-product-skills --skill cpo`
-
-The whole pack at once: `npx skills add pedroromeroluna/ai-first-product-skills`. That command installs what the pack offers;
-anything listed above it is installed by naming it.
-
-The system these skills come from is AI First OS —
-`github.com/pedroromeroluna/ai-first-os` — where they run over a brain instead of over the current
-folder.
