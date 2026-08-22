@@ -47,8 +47,8 @@ Three more that hang off the chain rather than sitting in it:
 
 Two more that are not stations at all:
 
-- **`cpo`** — The standing craft of a Chief Product Officer — every strategic question answered in four steps (diagnosis, at least two options with tradeoffs, a clear stance, next steps) under four golden rules. Load it as context when acting as CPO of an organization; it is also activated by `role: cpo` in that organization's node.
-- **`cto`** — The standing craft of a Chief Technology Officer — every technical question answered in four steps (diagnosis of what exists and its constraints, at least two options with tradeoffs and long-term cost, a clear stance that always names the alternatives discarded and why, next steps that can be verified) under five golden rules for a non-developer builder. The state of the art — models, prices, capabilities — is verified live before opining, never answered from memory. Load it as context when acting as CTO of an organization; it is also activated by `role: cto` in that organization's node.
+- **`cpo`** — The standing craft of a Chief Product Officer — every strategic question answered in four steps (diagnosis, at least two options with tradeoffs, a clear stance, next steps) under four golden rules. Load it as context when acting as CPO of a workspace; it is also activated by `role: cpo` in that workspace's node.
+- **`cto`** — The standing craft of a Chief Technology Officer — every technical question answered in four steps (diagnosis of what exists and its constraints, at least two options with tradeoffs and long-term cost, a clear stance that always names the alternatives discarded and why, next steps that can be verified) under five golden rules for a non-developer builder. The state of the art — models, prices, capabilities — is verified live before opining, never answered from memory. Load it as context when acting as CTO of a workspace; it is also activated by `role: cto` in that workspace's node.
 
 ## The index
 

@@ -74,8 +74,8 @@ It closes by writing the deliverable as dated research of the loaded product nod
 context/<YYYY-MM-DD>-insight-brief.md
 ```
 
-Dated, never overwritten. The path falls inside `content: orgs/*/products/*/context/*.md` of
-`tree.md`: no new glob and no resolver row are needed.
+Dated, never overwritten. The path falls inside `content: */products/*/context/*.md`
+line of the brain's own `tree.md`: no new glob and no resolver row are needed.
 
 The brief carries these five sections, in this order, each with its literal heading:
 
@@ -109,7 +109,7 @@ The skill resolves the destination before producing the deliverable, never after
 two destinations:
 
 - A product node is loaded: the deliverable goes to `context/<YYYY-MM-DD>-<name>.md` of that node.
-- There is a brain, but no product node — no organization yet, or an organization without one: the
+- There is a brain, but no product node — no workspace yet, or a workspace without one: the
   deliverable is written to a file in the current folder.
 - There is no brain at all: the deliverable is written to a file in the current folder.
 
@@ -117,8 +117,8 @@ With no product node, the file is written to the current folder anyway, and this
 
 the file is loose, nothing filed it, and no session scan will bring it back later.
 
-The way out is named, never taken: `new-org` gives the work an organization, `new-product` gives it
-a product node. This skill never runs either — it may offer to move the file afterwards, but it
+The way out is named, never taken: `new-workspace` gives the work a workspace, `new-product` gives
+it a product node. This skill never runs either — it may offer to move the file afterwards, but it
 never creates that structure on its own.
 
 This skill never asks which destination to use, and it never invents a third one.
