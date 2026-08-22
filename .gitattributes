@@ -1,0 +1,4 @@
+# GitHub Linguist. The product is Markdown an agent reads plus the shell that installs and scans it;
+# Linguist files Markdown under "prose" and leaves it out of Languages. This makes it count, so the
+# repository shows both languages in the proportion they really have.
+*.md linguist-detectable=true
