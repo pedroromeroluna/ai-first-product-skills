@@ -48,7 +48,8 @@ Before the first question:
    this interview.
 2. Read in full the files that `context/` already has. This is incremental: it is completed in
    stages and a filled section is never overwritten without saying so first.
-3. Read the context of the owning organization and, if it exists, dated research that applies.
+3. Read the context of the owning organization and, if it exists, the dated research that applies —
+   it lives in the `research/` of the node, next to `context/`.
 4. Tell the operator what you read and **which sections you can already fill on your own** with
    that. Only then does the interview start, and only over what is missing — you do not ask them what
    the system already has written.
@@ -129,7 +130,7 @@ no specs come out of there yet. It is said explicitly, never left to be discover
 The skill resolves the destination before producing the deliverable, never after. Three cases,
 two destinations:
 
-- A product node is loaded: the deliverable goes to `context/<YYYY-MM-DD>-<name>.md` of that node.
+- A product node is loaded: the deliverable goes to `research/<YYYY-MM-DD>-<name>.md` of that node.
 - There is a brain, but no product node — no workspace yet, or a workspace without one: the
   deliverable is written to a file in the current folder.
 - There is no brain at all: the deliverable is written to a file in the current folder.

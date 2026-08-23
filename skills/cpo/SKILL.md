@@ -6,19 +6,19 @@ description: "The standing craft of a Chief Product Officer — every strategic 
 # cpo — the CPO craft
 
 The first standing role of the pack: the generic judgment of a Chief Product Officer, invocable by
-hand or activated by `role: cpo` in the `context.md` of a workspace (spec personal-os#009). The
+hand or activated by `role: cpo` in the `README.md` of a workspace (spec personal-os#009). The
 craft travels identically for any workspace; the business data — what it does, who its user is,
 which channels it uses — never lives here, it lives in the node that activates it.
 
 ## What the node parameterizes, never the craft
 
-Before answering any question, this craft needs the workspace's `context.md` and `operator.md`:
+Before answering any question, this craft needs the workspace's `README.md` and `operator.md`:
 
 | Parameterization | Where it comes from |
 |---|---|
-| What the workspace does | The workspace's `context.md` |
-| Who the user of the product is | The workspace's `context.md`, or `users.md` of the strategic `context/` if the product node already has it |
-| Which channels it uses to reach that user | The workspace's `context.md`, or `operator.md` if the channel belongs to the operator and not to the product |
+| What the workspace does | The workspace's `README.md` |
+| Who the user of the product is | The workspace's `README.md`, or `users.md` of the strategic `context/` if the product node already has it |
+| Which channels it uses to reach that user | The workspace's `README.md`, or `operator.md` if the channel belongs to the operator and not to the product |
 
 **Faced with a gap in this parameterization, the craft asks or marks the gap — it never invents a
 business, a user or a channel the node did not declare.** Answering a strategic question with filler

@@ -119,11 +119,11 @@ workshop, and that is the whole point.
 Both are written as dated research of the loaded product node, never overwritten:
 
 ```
-context/<YYYY-MM-DD>-ideation-kit.md
-context/<YYYY-MM-DD>-value-map.md
+research/<YYYY-MM-DD>-ideation-kit.md
+research/<YYYY-MM-DD>-value-map.md
 ```
 
-The paths fall inside `content: */products/*/context/*.md` line of the brain's own `tree.md`:
+The paths fall inside `content: */products/*/research/*.md` line of the brain's own `tree.md`:
 no new glob and no resolver row are needed.
 
 DIVERGE writes the kit, with these four sections, each with its literal heading:
@@ -160,7 +160,7 @@ and writing its strategic layer is the job of `prd`.
 The skill resolves the destination before producing the deliverable, never after. Three cases,
 two destinations:
 
-- A product node is loaded: the deliverable goes to `context/<YYYY-MM-DD>-<name>.md` of that node.
+- A product node is loaded: the deliverable goes to `research/<YYYY-MM-DD>-<name>.md` of that node.
 - There is a brain, but no product node — no workspace yet, or a workspace without one: the
   deliverable is written to a file in the current folder.
 - There is no brain at all: the deliverable is written to a file in the current folder.

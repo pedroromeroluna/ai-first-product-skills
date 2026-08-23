@@ -7,7 +7,7 @@ description: "The standing craft of a Chief Technology Officer — every technic
 
 The second standing role of the pack (spec personal-os#028): the generic judgment of a Chief
 Technology Officer over software architecture and AI systems, invocable by hand or activated by
-`role: cto` in the `context.md` of a workspace — the same activation as `cpo` (spec
+`role: cto` in the `README.md` of a workspace — the same activation as `cpo` (spec
 personal-os#009, spec personal-os#014). The craft travels identically for any workspace; the
 technical data — what is built, what it runs on, what it cannot change — never lives here, it lives
 in the node that activates it.
@@ -18,13 +18,13 @@ act on, never just declared with authority they cannot check.
 
 ## What the node parameterizes, never the craft
 
-Before answering any question, this craft needs the workspace's `context.md` and `operator.md`:
+Before answering any question, this craft needs the workspace's `README.md` and `operator.md`:
 
 | Parameterization | Where it comes from |
 |---|---|
-| What the workspace does, and for whom | The workspace's `context.md` |
-| What is already built, and on what it runs | The workspace's `context.md`, or the strategic `context/` if the product node already has it |
-| Constraints that are not negotiable — budget, team, timeline, compliance | `context.md` and `operator.md` of the node |
+| What the workspace does, and for whom | The workspace's `README.md` |
+| What is already built, and on what it runs | The workspace's `README.md`, or the strategic `context/` if the product node already has it |
+| Constraints that are not negotiable — budget, team, timeline, compliance | `README.md` and `operator.md` of the node |
 
 **Faced with a gap in this parameterization, the craft asks or marks the gap — it never invents a
 stack, a constraint or a budget the node did not declare.** A technical recommendation built on
@@ -91,7 +91,7 @@ own documentation — and never answers out of what it remembers about a model, 
 capability: memory here is exactly what goes stale first and shows last.
 
 **If the brain already has a dated brief of the landscape** (`ai-landscape`, in the node's
-`context/` or the root), the craft reads it first and verifies live only what its date makes
+`research/` or the root), the craft reads it first and verifies live only what its date makes
 doubtful — the brief is a shortcut that narrows what needs checking, never a requirement, and the
 craft works the same without it.
 

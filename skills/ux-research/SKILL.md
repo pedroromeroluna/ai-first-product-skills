@@ -76,10 +76,10 @@ in case" is not an inclusion criterion.
 It closes by writing the deliverable as dated research of the loaded product node, in:
 
 ```
-context/<YYYY-MM-DD>-research-plan.md
+research/<YYYY-MM-DD>-research-plan.md
 ```
 
-Dated, never overwritten. The path falls inside `content: */products/*/context/*.md`
+Dated, never overwritten. The path falls inside `content: */products/*/research/*.md`
 line of the brain's own `tree.md`: no new glob and no resolver row are needed.
 
 The Plan carries these four sections, in this order, each with its literal heading:
@@ -107,7 +107,7 @@ the next station.
 The skill resolves the destination before producing the deliverable, never after. Three cases,
 two destinations:
 
-- A product node is loaded: the deliverable goes to `context/<YYYY-MM-DD>-<name>.md` of that node.
+- A product node is loaded: the deliverable goes to `research/<YYYY-MM-DD>-<name>.md` of that node.
 - There is a brain, but no product node — no workspace yet, or a workspace without one: the
   deliverable is written to a file in the current folder.
 - There is no brain at all: the deliverable is written to a file in the current folder.
