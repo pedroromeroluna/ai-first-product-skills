@@ -37,6 +37,14 @@ No file in this list is written into the body repo. If completing a section forc
 repo or a resolver, the tool does not do it: it says so and stops — that is a stopping condition of
 the spec that brought it, not a decision of this session.
 
+**Without a product node**, these eight generic filenames do not land loose in whatever folder the
+session started in, where they could overwrite files the user already had: they go into a
+`product-context/` folder of the current folder instead — `product-context/vision.md`,
+`product-context/problem.md`, `product-context/users.md`, `product-context/scope.md`,
+`product-context/competitors.md`, `product-context/opportunities.md`,
+`product-context/open-questions.md`, `product-context/glossary.md`. With a product node loaded, the
+destination stays `context/` exactly as above, unchanged.
+
 The KPI tree does not go here: it belongs to another tool's metric brief; this skill references it
 if it already exists, it does not produce it.
 
@@ -135,24 +143,17 @@ two destinations:
   deliverable is written to a file in the current folder.
 - There is no brain at all: the deliverable is written to a file in the current folder.
 
-With no product node, the file is written to the current folder anyway, and this line announces it:
-
-the file is loose, nothing filed it, and no session scan will bring it back later.
-
-The way out is named, never taken: `new-workspace` gives the work a workspace, `new-product` gives
-it a product node. This skill never runs either — it may offer to move the file afterwards, but it
-never creates that structure on its own.
+With no product node, the file is written to the current folder anyway. The closing message
+names only the path it just wrote and stops there — that is the normal way this skill ends, not
+an anomaly to qualify.
 
 This skill never asks which destination to use, and it never invents a third one.
 
 The rest of the pack installs one skill at a time. Look at `.claude/skills/` first and offer only
-the ones that are not there:
+the ones that are not there — once per session: the first time this skill closes in the session,
+never again on a later close of the same or another deliverable:
 
 - `grill` — `npx skills add pedroromeroluna/ai-first-product-skills --skill grill`
 
 The whole pack at once: `npx skills add pedroromeroluna/ai-first-product-skills`. That command installs what the pack offers;
 anything listed above it is installed by naming it.
-
-The system these skills come from is AI First OS —
-`github.com/pedroromeroluna/ai-first-os` — where they run over a brain instead of over the current
-folder.

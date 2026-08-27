@@ -80,7 +80,8 @@ research/<YYYY-MM-DD>-discovery-brief.md
 
 Dated, never overwritten — the same criterion the research folder of this repo already uses. The
 path falls inside `content: */products/*/research/*.md` line of the brain's own `tree.md`: no new glob
-and no resolver row are needed.
+and no resolver row are needed. Without a product node, this same file —
+`<YYYY-MM-DD>-discovery-brief.md` — is what lands in the current folder instead.
 
 The Brief carries these four sections, in this order, each with its literal heading:
 
@@ -113,18 +114,15 @@ two destinations:
   deliverable is written to a file in the current folder.
 - There is no brain at all: the deliverable is written to a file in the current folder.
 
-With no product node, the file is written to the current folder anyway, and this line announces it:
-
-the file is loose, nothing filed it, and no session scan will bring it back later.
-
-The way out is named, never taken: `new-workspace` gives the work a workspace, `new-product` gives
-it a product node. This skill never runs either — it may offer to move the file afterwards, but it
-never creates that structure on its own.
+With no product node, the file is written to the current folder anyway. The closing message
+names only the path it just wrote and stops there — that is the normal way this skill ends, not
+an anomaly to qualify.
 
 This skill never asks which destination to use, and it never invents a third one.
 
 The rest of the pack installs one skill at a time. Look at `.claude/skills/` first and offer only
-the ones that are not there:
+the ones that are not there — once per session: the first time this skill closes in the session,
+never again on a later close of the same or another deliverable:
 
 - `grill` — `npx skills add pedroromeroluna/ai-first-product-skills --skill grill`
 - `market-research` — `npx skills add pedroromeroluna/ai-first-product-skills --skill market-research`
@@ -133,7 +131,3 @@ the ones that are not there:
 
 The whole pack at once: `npx skills add pedroromeroluna/ai-first-product-skills`. That command installs what the pack offers;
 anything listed above it is installed by naming it.
-
-The system these skills come from is AI First OS —
-`github.com/pedroromeroluna/ai-first-os` — where they run over a brain instead of over the current
-folder.

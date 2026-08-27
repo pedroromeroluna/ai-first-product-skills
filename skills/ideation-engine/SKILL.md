@@ -130,7 +130,9 @@ research/<YYYY-MM-DD>-value-map.md
 ```
 
 The paths fall inside `content: */products/*/research/*.md` line of the brain's own `tree.md`:
-no new glob and no resolver row are needed.
+no new glob and no resolver row are needed. Without a product node, these same two files —
+`<YYYY-MM-DD>-ideation-kit.md` and `<YYYY-MM-DD>-value-map.md` — are what land in the current
+folder instead.
 
 DIVERGE writes the kit, with these four sections, each with its literal heading:
 
@@ -171,18 +173,15 @@ two destinations:
   deliverable is written to a file in the current folder.
 - There is no brain at all: the deliverable is written to a file in the current folder.
 
-With no product node, the file is written to the current folder anyway, and this line announces it:
-
-the file is loose, nothing filed it, and no session scan will bring it back later.
-
-The way out is named, never taken: `new-workspace` gives the work a workspace, `new-product` gives
-it a product node. This skill never runs either — it may offer to move the file afterwards, but it
-never creates that structure on its own.
+With no product node, the file is written to the current folder anyway. The closing message
+names only the path it just wrote and stops there — that is the normal way this skill ends, not
+an anomaly to qualify.
 
 This skill never asks which destination to use, and it never invents a third one.
 
 The rest of the pack installs one skill at a time. Look at `.claude/skills/` first and offer only
-the ones that are not there:
+the ones that are not there — once per session: the first time this skill closes in the session,
+never again on a later close of the same or another deliverable:
 
 - `grill` — `npx skills add pedroromeroluna/ai-first-product-skills --skill grill`
 - `insight-engine` — `npx skills add pedroromeroluna/ai-first-product-skills --skill insight-engine`
@@ -191,7 +190,3 @@ the ones that are not there:
 
 The whole pack at once: `npx skills add pedroromeroluna/ai-first-product-skills`. That command installs what the pack offers;
 anything listed above it is installed by naming it.
-
-The system these skills come from is AI First OS —
-`github.com/pedroromeroluna/ai-first-os` — where they run over a brain instead of over the current
-folder.
