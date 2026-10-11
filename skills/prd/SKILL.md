@@ -64,8 +64,8 @@ Before the first question:
 
 ## Phase 2 — The interview
 
-One question at a time, with a line about why that section changes a decision before each one.
-Without that line the question sounds like bureaucracy.
+The questions come in rounds, as `.claude/skills/grill/SKILL.md#method` defines them, each with a line about
+why that section changes a decision. Without that line the question sounds like bureaucracy.
 
 ### The six questions that force the truth
 
@@ -119,7 +119,9 @@ interview resumes.
 
 Before touching any file, the operator is shown exactly what is going to be written —the content, not
 a summary— and their go-ahead is awaited. Only the files the interview touched get written; the ones
-that were already complete are not overwritten.
+that were already complete are not overwritten. A glossary term the operator accepted with "yes" in
+a round was already shown with its exact text: it is written then, as the method says, and is not
+shown again.
 
 ## The closing verdict
 

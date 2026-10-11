@@ -1,6 +1,6 @@
 ---
 name: synthetic-users
-description: "Pilot the v1 research guide against synthetic personas —every trait marked as evidence or assumption, at least one skeptic— to find broken questions before spending real fieldwork, and write the Diagnosis + Script v2. Manually triggered, fourth station of the discovery pipeline; it validates nothing."
+description: "Pilot the v1 research guide against synthetic personas —every trait marked as evidence, public data or assumption, every answer naming the trait it rests on, at least one skeptic— to find broken questions before spending real fieldwork, and write the Diagnosis + Script v2. Manually triggered, fourth station of the discovery pipeline; it validates nothing."
 ---
 
 # synthetic-users — the Diagnosis + Script v2
@@ -33,14 +33,33 @@ while building each profile: every trait proposed is pressured for its origin be
 profile.
 
 Every simulated persona carries its traits with an explicit origin, marked one by one:
-**(evidence)** if it comes from real research already done —an interview, a usage figure, something
-the Discovery Brief or the Market Brief brings— or **(assumption)** if it is a construction with no
-research behind it. A trait with no mark does not enter the profile.
+
+| Mark | Origin |
+|---|---|
+| **(evidence)** | Real research already done on this segment —an interview, a usage figure, something the Discovery Brief or the Market Brief brings |
+| **(public data: <source>)** | A public dataset that describes a population the segment belongs to, cited by name and link |
+| **(assumption)** | A construction with no research and no public data behind it |
+
+A trait with no mark does not enter the profile.
+
+**A trait is searched for in public data before it is marked as an assumption.** The catalogs to
+search are Kaggle (kaggle.com/datasets), Hugging Face (huggingface.co/datasets) and Google Dataset
+Search (datasetsearch.research.google.com). If a dataset covers the trait, it is marked
+`(public data: <source>)`; if none does, it stays `(assumption)`.
+
+**Public data is never marked as evidence.** A public dataset describes a general population, not
+the segment of this product: counting it as evidence would make a synthetic persona look more
+validated than it is.
 
 **At least one skeptical persona**, with a reason: someone who already tried something similar and
 abandoned it, someone with a business objection (the cost, the process change), or someone who
 simply does not have the problem the hypothesis assumes. A set of personas that only confirm the
 hypothesis is no use for finding defects: it is useful for confirming them.
+
+**Every simulated answer names the trait it rests on**, with that trait's mark: "I wouldn't use it,
+I already have Jira (rests on: uses Jira daily, public data)". The answer itself is always invented,
+whatever the mark of its trait. Naming the trait shows which answers stand on something and which
+are pure construction, and it tells a broken question apart from a badly built persona.
 
 **No "I love it!" without a cost next to it.** Every enthusiastic answer from a synthetic persona is
 accompanied by its cost or its friction: what it costs them, what worries them, what they would have
@@ -82,10 +101,10 @@ The Diagnosis carries these four sections, in this order, each with its literal 
 ## Script v2
 ```
 
-- **Synthetic personas**: each profile, with its traits marked `(evidence)` or `(assumption)`, and
-  the skeptical persona identified as such.
-- **Simulation**: the simulated answers against the v1 script, every enthusiasm with its cost next
-  to it.
+- **Synthetic personas**: each profile, with its traits marked `(evidence)`,
+  `(public data: <source>)` or `(assumption)`, and the skeptical persona identified as such.
+- **Simulation**: the simulated answers against the v1 script, each one naming the trait it rests
+  on, every enthusiasm with its cost next to it.
 - **Defects found and rewrites**: every defect from the taxonomy that showed up, with its rewrite.
 - **Script v2**: the corrected guide, ready for real fieldwork.
 
