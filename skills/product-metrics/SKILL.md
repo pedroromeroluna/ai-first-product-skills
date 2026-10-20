@@ -15,8 +15,8 @@ value as of today.
 
 | When | From / to |
 |---|---|
-| The metric gate of `product-strategy` does not pass ("with no metric, the problem is not clear") | Entry from `product-strategy` (`.claude/skills/product-strategy/SKILL.md`) |
-| The Metric Brief is written | Exit toward `prd` (`.claude/skills/prd/SKILL.md`) — the strategic `context/` of the node is completed with the metric already defined |
+| The metric gate of `product-strategy` does not pass ("with no metric, the problem is not clear") | Entry from `product-strategy` (`.agents/skills/product-strategy/SKILL.md`) |
+| The Metric Brief is written | Exit toward `prd` (`.agents/skills/prd/SKILL.md`) — the strategic `context/` of the node is completed with the metric already defined |
 | With no prior gate | Invocable on its own, over the product node already loaded |
 
 Both neighboring stations are already installed in this pack: naming them here is real, not invented
@@ -24,7 +24,7 @@ Both neighboring stations are already installed in this pack: naming them here i
 
 ## The interview
 
-It is run with the pressure method of `.claude/skills/grill/SKILL.md#method` — cited by path, never copied.
+It is run with the pressure method of `.agents/skills/grill/SKILL.md#method` — cited by path, never copied.
 The five ingredients (counter-question with an example, pressure capped at 1-2 attempts, escape
 hatches, evidence hierarchy, every gap recorded) are applied exactly as described there.
 
@@ -129,8 +129,8 @@ an anomaly to qualify.
 
 This skill never asks which destination to use, and it never invents a third one.
 
-The rest of the pack installs one skill at a time. Look at `.claude/skills/` first and offer only
-the ones that are not there — once per session: the first time this skill closes in the session,
+The rest of the pack installs one skill at a time. Look at `.agents/skills/` first and then `.claude/skills/` (a skill present in both
+counts once) and offer only the ones that are not there — once per session: the first time this skill closes in the session,
 never again on a later close of the same or another deliverable:
 
 - `grill` — `npx skills add pedroromeroluna/ai-first-product-skills --skill grill`

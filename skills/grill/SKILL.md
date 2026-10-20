@@ -12,7 +12,7 @@ is parameterization by whoever cites, never a second copy of the method.
 
 ## Method
 
-Cite this section by its heading (`.claude/skills/grill/SKILL.md#method`) from any tool that interviews. The
+Cite this section by its heading (`.agents/skills/grill/SKILL.md#method`) from any tool that interviews. The
 ten ingredients come in two groups. 1-5 are how a single fact is pressured. 6-10 are how the whole
 interview runs. In the order they are applied:
 
@@ -149,9 +149,9 @@ none:
 
 | What comes out | Where it goes |
 |---|---|
-| A decision | `decisions.md` of the loaded node — the organization's if that is where the work is happening, the root's if the loaded node is the operator's own work |
-| A gap | The backlog of the loaded node (`backlog.md` of the organization), recorded as open with who closes it named in the text — the same free-text, verbatim line format the session close already uses |
-| A term the operator accepted | The product glossary (`glossary.md`), at the destination and in the format of ingredient 9 |
+| A decision | A file of its own in `decisions/` of the workspace, written by the session close with `about:` of the loaded node when it is a product, a course, a channel or an account |
+| A gap | The backlog of the loaded initiative —or, when the loaded node is a product, a course, a channel or an account, of that node's standing initiative (`capture --about`)—, recorded as open with who closes it named in the text — the same free-text, verbatim line format the session close already uses |
+| A term the operator accepted | The product glossary (`context/glossary.md`), at the destination and in the format of ingredient 9 |
 | A gap, if the loaded product node declares its own open-questions layer | That layer (`context/open-questions.md` of the node), instead of the backlog |
 
 The decision and gap destinations exist before this tool; the glossary is born when the first term

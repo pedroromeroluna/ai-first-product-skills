@@ -18,7 +18,7 @@ tool for it** — see "The execution check" at the end.
 
 | When | From / to |
 |---|---|
-| The prototype brief from `ideation-engine` is written | Entry from `ideation-engine` (`.claude/skills/ideation-engine/SKILL.md`) — the key flow and the minimum screens of that brief are the input of the interface spec |
+| The prototype brief from `ideation-engine` is written | Entry from `ideation-engine` (`.agents/skills/ideation-engine/SKILL.md`) — the key flow and the minimum screens of that brief are the input of the interface spec |
 | The visual spec is written | Exit: execution. If the session has a tool able to build it, it is offered right there; if not, the document is the end of the station and whoever builds it builds it from there |
 | Any piece with a reader and a purpose | Invocable on its own, with no prior station: a deck, an infographic, a screen that has to exist tomorrow |
 
@@ -32,7 +32,7 @@ in the spec, never filled in with something plausible.
 ## The interview
 
 The purpose, the reader and the success condition of the piece are pressured with the method of
-`.claude/skills/grill/SKILL.md#method` —cited by path, never copied— before any structure gets written. Three
+`.agents/skills/grill/SKILL.md#method` —cited by path, never copied— before any structure gets written. Three
 questions carry the weight, and none of them is answered by the operator saying "it has to look
 good":
 
@@ -46,7 +46,7 @@ good":
 ## Method
 
 The shared visual criteria. Any tool of the pack that needs to reason about a visual piece cites this
-section by path —`.claude/skills/visual-designer/SKILL.md#method`— and never copies it.
+section by path —`.agents/skills/visual-designer/SKILL.md#method`— and never copies it.
 
 ### 1. One hierarchy per surface
 
@@ -139,7 +139,7 @@ tool is offered when it can actually build that piece, not because it is connect
 The visual spec does not validate that the piece works: that it gets read, understood and acted on is
 something only its real reader answers. And it does not decide what the product does — the flow it
 specifies comes from the prototype brief of `ideation-engine`, and the scope from `prd`
-(`.claude/skills/prd/SKILL.md`).
+(`.agents/skills/prd/SKILL.md`).
 
 ## Destination
 
@@ -157,8 +157,8 @@ an anomaly to qualify.
 
 This skill never asks which destination to use, and it never invents a third one.
 
-The rest of the pack installs one skill at a time. Look at `.claude/skills/` first and offer only
-the ones that are not there — once per session: the first time this skill closes in the session,
+The rest of the pack installs one skill at a time. Look at `.agents/skills/` first and then `.claude/skills/` (a skill present in both
+counts once) and offer only the ones that are not there — once per session: the first time this skill closes in the session,
 never again on a later close of the same or another deliverable:
 
 - `grill` — `npx skills add pedroromeroluna/ai-first-product-skills --skill grill`

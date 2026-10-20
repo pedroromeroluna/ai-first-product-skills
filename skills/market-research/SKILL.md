@@ -13,13 +13,13 @@ number with its source and its assumption next to it.
 
 | When | From / to |
 |---|---|
-| The Discovery Brief from `product-strategy` already has prioritized hypotheses | Entry from `product-strategy` (`.claude/skills/product-strategy/SKILL.md`) |
-| The Market Brief is written | Exit toward `ux-research` (`.claude/skills/ux-research/SKILL.md`) — next station of the pipeline |
+| The Discovery Brief from `product-strategy` already has prioritized hypotheses | Entry from `product-strategy` (`.agents/skills/product-strategy/SKILL.md`) |
+| The Market Brief is written | Exit toward `ux-research` (`.agents/skills/ux-research/SKILL.md`) — next station of the pipeline |
 | With no prior Discovery Brief | Invocable on its own, over the loaded product node, asking for the segment and the market directly |
 
 ## The research
 
-Before searching, the pressure method of `.claude/skills/grill/SKILL.md#method` is applied — cited by path,
+Before searching, the pressure method of `.agents/skills/grill/SKILL.md#method` is applied — cited by path,
 never copied — to the definition of the segment and the market, and to every source proposed: the
 counter-question, the pressure capped at 1-2 attempts and the recording of the gap when the second
 resistance brings no data are the same as always.
@@ -119,8 +119,8 @@ an anomaly to qualify.
 
 This skill never asks which destination to use, and it never invents a third one.
 
-The rest of the pack installs one skill at a time. Look at `.claude/skills/` first and offer only
-the ones that are not there — once per session: the first time this skill closes in the session,
+The rest of the pack installs one skill at a time. Look at `.agents/skills/` first and then `.claude/skills/` (a skill present in both
+counts once) and offer only the ones that are not there — once per session: the first time this skill closes in the session,
 never again on a later close of the same or another deliverable:
 
 - `grill` — `npx skills add pedroromeroluna/ai-first-product-skills --skill grill`

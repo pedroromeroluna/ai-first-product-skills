@@ -12,13 +12,13 @@ the Discovery Brief — never all of them at once — and closes with a Research
 
 | When | From / to |
 |---|---|
-| The Market Brief from `market-research` already sized the market | Entry from `market-research` (`.claude/skills/market-research/SKILL.md`) |
-| The Research Plan is written | Exit toward `synthetic-users` (`.claude/skills/synthetic-users/SKILL.md`) — pilots the script before spending real fieldwork |
+| The Market Brief from `market-research` already sized the market | Entry from `market-research` (`.agents/skills/market-research/SKILL.md`) |
+| The Research Plan is written | Exit toward `synthetic-users` (`.agents/skills/synthetic-users/SKILL.md`) — pilots the script before spending real fieldwork |
 | With no prior Market Brief | Invocable on its own, over the loaded product node, with the Discovery Brief as the minimum input |
 
 ## The interview
 
-It is run with the pressure method of `.claude/skills/grill/SKILL.md#method` — cited by path, never copied —
+It is run with the pressure method of `.agents/skills/grill/SKILL.md#method` — cited by path, never copied —
 over the choice of hypothesis, the screening criterion and every question in the guide.
 
 ### One objective per round
@@ -120,8 +120,8 @@ an anomaly to qualify.
 
 This skill never asks which destination to use, and it never invents a third one.
 
-The rest of the pack installs one skill at a time. Look at `.claude/skills/` first and offer only
-the ones that are not there — once per session: the first time this skill closes in the session,
+The rest of the pack installs one skill at a time. Look at `.agents/skills/` first and then `.claude/skills/` (a skill present in both
+counts once) and offer only the ones that are not there — once per session: the first time this skill closes in the session,
 never again on a later close of the same or another deliverable:
 
 - `grill` — `npx skills add pedroromeroluna/ai-first-product-skills --skill grill`

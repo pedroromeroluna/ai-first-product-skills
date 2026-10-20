@@ -15,8 +15,8 @@ twelve interviews of patients and administrators already done.
 
 | When | From / to |
 |---|---|
-| Real fieldwork is done and the raw answers exist | Entry from real fieldwork — interviews with real people, the work the operator picks up; it is not a skill of this pack. The Diagnosis + Script v2 of `synthetic-users` (`.claude/skills/synthetic-users/SKILL.md`) is the guide those answers came from |
-| The Insight Brief is written | Exit toward `ideation-engine` (`.claude/skills/ideation-engine/SKILL.md`) — the solution space starts from the profile this brief validates |
+| Real fieldwork is done and the raw answers exist | Entry from real fieldwork — interviews with real people, the work the operator picks up; it is not a skill of this pack. The Diagnosis + Script v2 of `synthetic-users` (`.agents/skills/synthetic-users/SKILL.md`) is the guide those answers came from |
+| The Insight Brief is written | Exit toward `ideation-engine` (`.agents/skills/ideation-engine/SKILL.md`) — the solution space starts from the profile this brief validates |
 | With no prior station of the pipeline | Invocable on its own, over any set of real answers, with the business outcome as the minimum second input |
 
 ## Rule number one
@@ -39,7 +39,7 @@ operator as a finding about that source and the source is marked untrustworthy. 
 the four steps, the scoring or where the brief is written.
 
 **The business outcome** (required to prioritize): the objective the product is trying to move. It
-is asked for with the pressure method of `.claude/skills/grill/SKILL.md#method` —cited by path, never
+is asked for with the pressure method of `.agents/skills/grill/SKILL.md#method` —cited by path, never
 copied— before scoring anything. **Without an outcome there is no prioritization**, only a flat
 list: with no outcome the opportunities are written unordered and the brief says why.
 
@@ -110,7 +110,7 @@ The brief carries these five sections, in this order, each with its literal head
 The Insight Brief does not say what to build: it says what is worth attacking and with what
 evidence. Turning an opportunity into ideas, and ideas into a value proposition, is the job of
 `ideation-engine`. Deciding the scope and writing the strategic layer of the product is the job of
-`prd` (`.claude/skills/prd/SKILL.md`).
+`prd` (`.agents/skills/prd/SKILL.md`).
 
 ## Destination
 
@@ -128,8 +128,8 @@ an anomaly to qualify.
 
 This skill never asks which destination to use, and it never invents a third one.
 
-The rest of the pack installs one skill at a time. Look at `.claude/skills/` first and offer only
-the ones that are not there — once per session: the first time this skill closes in the session,
+The rest of the pack installs one skill at a time. Look at `.agents/skills/` first and then `.claude/skills/` (a skill present in both
+counts once) and offer only the ones that are not there — once per session: the first time this skill closes in the session,
 never again on a later close of the same or another deliverable:
 
 - `grill` — `npx skills add pedroromeroluna/ai-first-product-skills --skill grill`

@@ -18,9 +18,9 @@ workshop, or processing its results?*
 
 | When | From / to |
 |---|---|
-| The customer profile is validated | Entry from `insight-engine` (`.claude/skills/insight-engine/SKILL.md`) — the right side of the profile is what this station ideates against |
+| The customer profile is validated | Entry from `insight-engine` (`.agents/skills/insight-engine/SKILL.md`) — the right side of the profile is what this station ideates against |
 | The workshop happened | Entry from the workshop itself: the humans ideated and voted, outside any agent |
-| The Value Map and the prototype brief are written | Exit toward `prd` (`.claude/skills/prd/SKILL.md`) — the scope of the strategic layer starts from what the team chose — and toward `visual-designer` (`.claude/skills/visual-designer/SKILL.md`), which turns the prototype brief into the spec of the piece |
+| The Value Map and the prototype brief are written | Exit toward `prd` (`.agents/skills/prd/SKILL.md`) — the scope of the strategic layer starts from what the team chose — and toward `visual-designer` (`.agents/skills/visual-designer/SKILL.md`), which turns the prototype brief into the spec of the piece |
 | With no prior Insight Brief | Invocable on its own, with a customer profile pasted in as the minimum input: **with no profile there is no ideation** — ideating with no evidence of the problem is decorating assumptions |
 
 ## Rule number one
@@ -56,7 +56,7 @@ hard: **traceability** —every question cites the job, pain or gain it comes fr
 when there is one—; **altitude** —a good question admits five or more different solutions: too wide
 does not orient, too narrow is a solution in disguise—; and **between 3 and 5 of them**: more does
 not converge, fewer does not diverge. Each question is pressured with the method of
-`.claude/skills/grill/SKILL.md#method` —cited by path, never copied— against its origin: a question that
+`.agents/skills/grill/SKILL.md#method` —cited by path, never copied— against its origin: a question that
 traces to nothing does not enter the board.
 
 **3. Seed ideas, sealed.** Three or four ideas per question, each labeled by the technique that
@@ -179,8 +179,8 @@ an anomaly to qualify.
 
 This skill never asks which destination to use, and it never invents a third one.
 
-The rest of the pack installs one skill at a time. Look at `.claude/skills/` first and offer only
-the ones that are not there — once per session: the first time this skill closes in the session,
+The rest of the pack installs one skill at a time. Look at `.agents/skills/` first and then `.claude/skills/` (a skill present in both
+counts once) and offer only the ones that are not there — once per session: the first time this skill closes in the session,
 never again on a later close of the same or another deliverable:
 
 - `grill` — `npx skills add pedroromeroluna/ai-first-product-skills --skill grill`

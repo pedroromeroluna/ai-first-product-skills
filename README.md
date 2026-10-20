@@ -21,8 +21,8 @@ One skill at a time:
 npx skills add pedroromeroluna/ai-first-product-skills --skill product-strategy
 ```
 
-Either way the skills land in `.claude/skills/` of the current project, where any harness that reads
-the Agent Skills standard picks them up. Nothing here activates on its own: a skill runs when you
+Either way the skills land in `.agents/skills/` of the current project, with a link in `.claude/skills/`,
+where any harness that reads the Agent Skills standard picks them up. Nothing here activates on its own: a skill runs when you
 name it.
 
 ## The suggested sequence

@@ -18,13 +18,13 @@ act on, never just declared with authority they cannot check.
 
 ## What the node parameterizes, never the craft
 
-Before answering any question, this craft needs the workspace's `README.md` and `operator.md`:
+Before answering any question, this craft needs the workspace's `README.md` and `account/operator.md`:
 
 | Parameterization | Where it comes from |
 |---|---|
 | What the workspace does, and for whom | The workspace's `README.md` |
 | What is already built, and on what it runs | The workspace's `README.md`, or the strategic `context/` if the product node already has it |
-| Constraints that are not negotiable — budget, team, timeline, compliance | `README.md` and `operator.md` of the node |
+| Constraints that are not negotiable — budget, team, timeline, compliance | `README.md` and `account/operator.md` of the node |
 
 **Faced with a gap in this parameterization, the craft asks or marks the gap — it never invents a
 stack, a constraint or a budget the node did not declare.** A technical recommendation built on

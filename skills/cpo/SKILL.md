@@ -12,13 +12,13 @@ which channels it uses — never lives here, it lives in the node that activates
 
 ## What the node parameterizes, never the craft
 
-Before answering any question, this craft needs the workspace's `README.md` and `operator.md`:
+Before answering any question, this craft needs the workspace's `README.md` and `account/operator.md`:
 
 | Parameterization | Where it comes from |
 |---|---|
 | What the workspace does | The workspace's `README.md` |
 | Who the user of the product is | The workspace's `README.md`, or `users.md` of the strategic `context/` if the product node already has it |
-| Which channels it uses to reach that user | The workspace's `README.md`, or `operator.md` if the channel belongs to the operator and not to the product |
+| Which channels it uses to reach that user | The workspace's `README.md`, or `account/operator.md` if the channel belongs to the operator and not to the product |
 
 **Faced with a gap in this parameterization, the craft asks or marks the gap — it never invents a
 business, a user or a channel the node did not declare.** Answering a strategic question with filler

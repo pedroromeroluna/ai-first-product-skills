@@ -13,7 +13,7 @@ method — out of this layer come the specs.
 repo.** The repo declared in `repo:` of the node's head is the body: specs, technical decisions,
 as-built. The strategic layer lives in the head, not in the body.
 
-The interview applies pressure with the method of `.claude/skills/grill/SKILL.md#method`: it is cited by that
+The interview applies pressure with the method of `.agents/skills/grill/SKILL.md#method`: it is cited by that
 heading, never copied. Any change to the method happens there, once.
 
 ## The files it produces
@@ -30,7 +30,7 @@ with `README.md` first and the rest as the interview gets completed.
 | `scope.md` | What it does NOT do, who it does NOT sell to, hard constraints, what goes into the first version |
 | `competitors.md` | What it competes against and how it differs |
 | `opportunities.md` | What might be worth it and has not been decided |
-| `open-questions.md` | What is left to decide — live, it empties out as things close |
+| `open-questions.md` | What is left to decide — live, it empties out as things close; the questions sit inside its `[!QUESTION]` callout |
 | `glossary.md` | The terms of the domain |
 
 No file in this list is written into the body repo. If completing a section forced touching the body
@@ -64,7 +64,7 @@ Before the first question:
 
 ## Phase 2 — The interview
 
-The questions come in rounds, as `.claude/skills/grill/SKILL.md#method` defines them, each with a line about
+The questions come in rounds, as `.agents/skills/grill/SKILL.md#method` defines them, each with a line about
 why that section changes a decision. Without that line the question sounds like bureaucracy.
 
 ### The six questions that force the truth
@@ -94,7 +94,7 @@ their invalidation condition.
 
 ### How to apply pressure
 
-The method of `.claude/skills/grill/SKILL.md#method` decides when to counter-question, how many rounds, and
+The method of `.agents/skills/grill/SKILL.md#method` decides when to counter-question, how many rounds, and
 what to do with the second resistance. It is not repeated here: it is applied.
 
 ## Alternatives phase, mandatory
@@ -151,8 +151,8 @@ an anomaly to qualify.
 
 This skill never asks which destination to use, and it never invents a third one.
 
-The rest of the pack installs one skill at a time. Look at `.claude/skills/` first and offer only
-the ones that are not there — once per session: the first time this skill closes in the session,
+The rest of the pack installs one skill at a time. Look at `.agents/skills/` first and then `.claude/skills/` (a skill present in both
+counts once) and offer only the ones that are not there — once per session: the first time this skill closes in the session,
 never again on a later close of the same or another deliverable:
 
 - `grill` — `npx skills add pedroromeroluna/ai-first-product-skills --skill grill`
